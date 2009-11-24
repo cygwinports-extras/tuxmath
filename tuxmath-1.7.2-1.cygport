@@ -1,0 +1,8 @@
+ORIG_PN="tuxmath_w_fonts"
+
+DESCRIPTION="Math tutor for children"
+HOMEPAGE="http://tux4kids.alioth.debian.org/tuxmath/"
+SRC_URI="https://alioth.debian.org/frs/download.php/2971/${ORIG_PN}-${PV}.tar.gz"
+
+#KEEPDIRS="/etc/tuxtype /var/tuxtype/words"
+

@@ -1,0 +1,21 @@
+--- origsrc/tuxmath_w_fonts-1.7.2/configure.ac	2009-03-12 06:59:17.000000000 -0500
++++ src/tuxmath_w_fonts-1.7.2/configure.ac	2009-11-24 13:00:09.970571000 -0600
+@@ -116,7 +116,7 @@ fi
+ 
+ dnl Check for (somewhat) higher-level math functions - needed for SDL_extras
+ AC_CHECK_LIB([m],
+-             [csin],
++             [floor],
+              ,
+              [AC_MSG_ERROR([Math library not found - functions in <math.h> may not be available.])])
+ 
+@@ -130,7 +130,8 @@ AC_CHECK_LIB([m],
+ AC_FUNC_ALLOCA
+ AC_HEADER_DIRENT
+ AC_HEADER_STDC
+-AC_CHECK_HEADERS([argz.h error.h errno.h fcntl.h float.h iconv.h inttypes.h langinfo.h libgen.h libintl.h limits.h locale.h malloc.h math.h stddef.h stdint.h stdio_ext.h stdlib.h string.h strings.h sys/param.h unistd.h wchar.h])
++AC_CHECK_HEADERS([argz.h error.h errno.h fcntl.h float.h inttypes.h langinfo.h libgen.h libintl.h limits.h locale.h malloc.h math.h stddef.h stdint.h stdio_ext.h stdlib.h string.h strings.h sys/param.h unistd.h wchar.h])
++AM_ICONV
+ 
+ 
+ # --------------------------------------------------------------------------------------------
